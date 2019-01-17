@@ -1,9 +1,40 @@
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-mongoose.connect("mongodb://newUser123:newUser123@ds257314.mlab.com:57314/newsscraper");
-var articleSchema = mongoose.Schema({
-    headline: String,
-    summary: String,
-    URL: String 
-})
-module.exports = mongoose.model("Article", articleSchema);
+// Create schema
+const ArticleSchema = new Schema({
+    headline: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    link: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    summary: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    timestamp: {
+        type: Date, 
+        default: Date.now
+    },
+    saved: {
+        type: Boolean,
+        default: false
+    },
+    note: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Note'
+        }
+    ]
+});
+
+// Create model from schema
+const Article = mongoose.model('Article', ArticleSchema);
+
+module.exports = Article;
