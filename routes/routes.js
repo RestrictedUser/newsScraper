@@ -41,16 +41,16 @@ module.exports = (app)=>{
     // scrape data then save to mongodb
     app.get('/scrape', (req, res)=>{
         // get body of url
-        axios.get('http://www.bbc.com/sport/football')
+        axios.get('nytimes.com')
         .then((response)=>{
             // use cheerio for shorthand selector $
             let $ = cheerio.load(response.data);
             
-            $('.lakeside__content').each(function(i, element) {
+            $('article.css-8atqhb').each(function(i, element) {
                 let result = {};
-                const title = $(this).children('h3').children('a').children('span').text();
-                const link = $(this).children('h3').children('a').attr('href');
-                const summary = $(this).children('p').text();
+                const title = $(this).children('div').children('a').children('span').text();
+                const link = $(this).children('div').children('a').attr('href');
+                const summary = $(this).children('ul').children('li').text();
 
                 result.title = title;
                 result.link = link;
