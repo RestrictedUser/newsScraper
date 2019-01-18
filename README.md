@@ -3,6 +3,11 @@
 Discription: News scraper that will scrape articles from NYtimes.com and format them with handlebars
 Features: Once an article has been scraped you can add notes, save an article, or remove an article
 
-![alt text](C:\Users\thewi\Desktop\newsScraper\newsScraper\public\assets\img\Capture.PNG)
+Front Page
+![alt text](https://github.com/RestrictedUser/newsScraper/blob/master/public/assets/img/Capture.PNG)
 
-![alt text](C:\Users\thewi\Desktop\newsScraper\newsScraper\public\assets\img\Capture1.PNG)
+Saved Articles Page
+![alt text](https://github.com/RestrictedUser/newsScraper/blob/master/public/assets/img/Capture1.PNG)
+
+Notes setting with ability to take multiple and remove old notes
+![alt text](https://github.com/RestrictedUser/newsScraper/blob/master/public/assets/img/note.PNG)
