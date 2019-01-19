@@ -3,19 +3,19 @@ const Schema = mongoose.Schema;
 
 // Create schema
 const ArticleSchema = new Schema({
-    headline: {
+    title: {
         type: String,
-        required: true,
+        required: false,
         unique: true
     },
     link: {
         type: String,
-        required: true,
+        required: false,
         unique: true
     },
     summary: {
         type: String,
-        required: true,
+        required: false,
         unique: true
     },
     timestamp: {

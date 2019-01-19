@@ -24,7 +24,7 @@ app.set('view engine', 'handlebars');
 
 // database configuration
 mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI, {userMongoClient: true});
+mongoose.connect(MONGODB_URI, { useCreateIndex: true, useNewUrlParser: true });
 
 // check connection status
 let db = mongoose.connection;
