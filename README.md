@@ -11,3 +11,8 @@ Saved Articles Page
 
 Notes setting with ability to take multiple and remove old notes
 ![alt text](https://github.com/RestrictedUser/newsScraper/blob/master/public/assets/img/note.PNG)
+
+Technologies Used:
+MongoDB, Express, NodeJS.
+npm: axios, cheerio, handlebars, body-parser.
+jQuery, Bootstrap 
