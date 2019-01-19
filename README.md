@@ -1,7 +1,7 @@
 # newsScraper
 
-Discription: News scraper that will scrape articles from NYtimes.com and format them with handlebars
-Features: Once an article has been scraped you can add notes, save an article, or remove an article
+Discription: News scraper that will scrape articles and format them with handlebars
+Features: Once an article has been scraped you can add notes, save an article, or remove an article.
 
 Front Page
 ![alt text](https://github.com/RestrictedUser/newsScraper/blob/master/public/assets/img/Capture.PNG)
