@@ -38,40 +38,7 @@ module.exports = (app)=>{
         });
     });
 
-    // scrape data then save to mongodb
-    // app.get('/scrape', (req, res)=>{
-    //     // get body of url
-    //     axios.get('https://www.nytimes.com/')
-    //     .then((response)=>{
-    //         // use cheerio for shorthand selector $
-    //         let $ = cheerio.load(response.data);
-            
-    //         $('div.css-1yoguk1 eqveam60').each(function(i, element) {
-    //             let result = {};
-    //             const title = $(this).children('h2').children('a').children('span').text();
-    //             const link = $(this).children('div').children('a').attr('href');
-    //             const summary = $(this).children('ul').children('li').text();
-
-    //             result.title = title;
-    //             result.link = link;
-    //             result.summary = summary;
-               
-    //             // create new Article
-    //             db.Article.create(result)
-    //             .then((dbArticle)=>{
-    //                 console.log(`\narticle scraped: ${dbArticle}`);
-    //             })
-    //             .catch((err)=>{
-    //                 console.log(`\nerror while saving to database: ${err}`);
-    //             });
-    //         });
-
-    //         res.redirect('/articles');
-    //     })
-    //     .catch((error)=>{
-    //         console.log(`error while getting data from url: ${error}`);
-    //     });
-    // });
+    
 
 
     // A GET route for scraping the echoJS website
